@@ -1,9 +1,10 @@
-import NavigationBar from "./components/NavigationBar";
+import SlidingNavigationBar from "./components/SlidingTabBar";
+
 
 function App() {
   return (
     <>
-      <NavigationBar />
+      <SlidingNavigationBar />
     </>
   );
 }

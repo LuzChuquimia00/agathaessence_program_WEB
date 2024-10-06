@@ -1,9 +1,11 @@
 .nav-bar {
   background-color: #333;
   color: #fff;
-  padding: 1em;
+  padding: 2.5px;
+  width: 100.15%;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .nav-bar ul {
@@ -11,6 +13,8 @@
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
+  padding: 1em;
 }
 
 .nav-bar li {
