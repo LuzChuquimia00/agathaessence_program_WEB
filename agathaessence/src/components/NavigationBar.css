@@ -1,6 +1,6 @@
 .nav-bar {
-  background-color: #333;
-  color: #fff;
+  background-color: #C9DCEF;
+  color: #C9DCEF;
   padding: 2.5px;
   width: 100.15%;
   display: flex;
@@ -22,12 +22,12 @@
 }
 
 .nav-bar a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 }
 
 .nav-bar a:hover {
-  color: #ccc;
+  color: #000000;
 }
 
 .left-links {
@@ -36,4 +36,10 @@
 
 .right-links {
   margin-left: auto;
+}
+
+.profile-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
 }

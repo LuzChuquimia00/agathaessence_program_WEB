@@ -14,13 +14,13 @@ function PerfilBar() {
             <p>Rango de Usuario: Golden </p>
             </li>
           <li>
-            <a href="#" className="perfil-button">Historial de pedidos</a>
+            <a href="#HistorialDePedidos" className="perfil-button">Historial de pedidos</a>
           </li>
           <li>
-            <a href="#" className="perfil-button">Configuración de cuenta</a>
+            <a href="#ConfiguraciónDeCuenta" className="perfil-button">Configuración de cuenta</a>
           </li>
           <li>
-            <a href="#" className="perfil-button">Cerrar sesión</a>
+            <a href="#CerrarSesión" className="perfil-button">Cerrar sesión</a>
           </li>
         </ul>
       </div>

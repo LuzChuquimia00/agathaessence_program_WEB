@@ -10,31 +10,31 @@ function SideBar() {
         </div>
         <ul>
           <li>
-            <a href="#">Perfil</a>
+            <a href="#Perfil">Perfil</a>
           </li>
           <li>
-            <a href="#">Pedidos</a>
+            <a href="#Pedidos">Pedidos</a>
           </li>
           <li>
-            <a href="#">Nuevos Pedidos</a>
+            <a href="#NuevosPedidos">Nuevos Pedidos</a>
           </li>
           <li>
-            <a href="#">Revistas</a>
+            <a href="#Revistas">Revistas</a>
           </li>
           <li>
-            <a href="#">Opción 1</a>
+            <a href="#Opción1">Opción 1</a>
           </li>
           <li>
-            <a href="#">Opción 2</a>
+            <a href="#Opción2">Opción 2</a>
           </li>
           <li>
-            <a href="#">Opción 3</a>
+            <a href="#Opción3">Opción 3</a>
           </li>
           <li>
-            <a href="#">Opción 4</a>
+            <a href="#Opción4">Opción 4</a>
           </li>
           <li>
-            <a href="#">Opción 5</a>
+            <a href="#Opción5">Opción 5</a>
           </li>
         </ul>
       </div>

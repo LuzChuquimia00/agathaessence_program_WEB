@@ -1,7 +1,9 @@
+// SlidingNavigationBar.jsx
 import "./NavigationBar.css";
 import { useState } from "react";
 import SideBar from "./SideBar";
 import PerfilBar from "./PerfilBar";
+import Logo from "./Logo";
 
 function SlidingNavigationBar() {
   const [activeTab, setActiveTab] = useState("profile");
@@ -27,6 +29,7 @@ function SlidingNavigationBar() {
           </a>
         </li>
       </ul>
+      <Logo />
       <ul className="right-links">
         <li>
           <a href="#profile" onClick={() => setShowPerfilBar(!showPerfilBar)}>
