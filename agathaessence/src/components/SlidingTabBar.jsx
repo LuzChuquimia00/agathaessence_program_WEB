@@ -1,10 +1,12 @@
-import NavigationBar from "./NavigationBar";
+import "./NavigationBar.css";
 import { useState } from "react";
 import SideBar from "./SideBar";
+import PerfilBar from "./PerfilBar";
 
 function SlidingNavigationBar() {
   const [activeTab, setActiveTab] = useState("profile");
   const [showSideBar, setShowSideBar] = useState(false);
+  const [showPerfilBar, setShowPerfilBar] = useState(false);
 
   const tabs = [
     { id: "profile", name: "Profile" },
@@ -27,10 +29,13 @@ function SlidingNavigationBar() {
       </ul>
       <ul className="right-links">
         <li>
-          <a href="#profile">Profile</a>
+          <a href="#profile" onClick={() => setShowPerfilBar(!showPerfilBar)}>
+            Perfil
+          </a>
         </li>
       </ul>
       {showSideBar && <SideBar />}
+      {showPerfilBar && <PerfilBar />}
     </nav>
   );
 }

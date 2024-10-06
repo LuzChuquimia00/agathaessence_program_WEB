@@ -1,0 +1,61 @@
+.perfil-bar {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 0;
+}
+
+.perfil-bar-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 0;
+  text-align: center;
+  width: 95;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil-bar-container {
+  position: absolute;
+  top: 22px;
+  right: 0;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+}
+
+.perfil-bar h2 {
+  margin-top: 0;
+}
+
+.perfil-bar ul {
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+  align-items: left;
+}
+
+.perfil-bar li {
+  margin-bottom: 25px;
+  width: 100%;
+  text-align: left;
+}
+
+.perfil-bar a {
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.perfil-bar a:hover {
+  background-color: #ddd;
+}
