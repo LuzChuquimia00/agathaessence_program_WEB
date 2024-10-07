@@ -30,6 +30,16 @@
   color: #000000;
 }
 
+.nav-bar-buttom a {
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-bar a:hover {
+  background-color: #6073b1;
+}
+
 .left-links {
   margin-left: 0;
 }

@@ -10,12 +10,6 @@ function SideBar() {
         </div>
         <ul>
           <li>
-            <a href="#Perfil">Perfil</a>
-          </li>
-          <li>
-            <a href="#Pedidos">Pedidos</a>
-          </li>
-          <li>
             <a href="#NuevosPedidos">Nuevos Pedidos</a>
           </li>
           <li>

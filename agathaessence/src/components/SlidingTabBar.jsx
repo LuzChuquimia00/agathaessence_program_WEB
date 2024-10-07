@@ -20,7 +20,7 @@ function SlidingNavigationBar() {
   return (
     <nav className="nav-bar">
       <ul>
-        <li>
+        <li className="nav-bar-buttom">
           <a href="#home" onClick={() => {
             setActiveTab("profile");
             setShowSideBar(!showSideBar);
@@ -31,7 +31,7 @@ function SlidingNavigationBar() {
       </ul>
       <Logo />
       <ul className="right-links">
-        <li>
+        <li className="nav-bar-buttom">
           <a href="#profile" onClick={() => setShowPerfilBar(!showPerfilBar)}>
             Perfil
           </a>
