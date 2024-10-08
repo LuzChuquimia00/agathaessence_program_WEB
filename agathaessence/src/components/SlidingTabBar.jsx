@@ -4,6 +4,7 @@ import { useState } from "react";
 import SideBar from "./SideBar";
 import PerfilBar from "./PerfilBar";
 import Logo from "./Logo";
+import { RiAccountCircleFill } from "react-icons/ri";
 
 function SlidingNavigationBar() {
   const [activeTab, setActiveTab] = useState("profile");
@@ -33,7 +34,7 @@ function SlidingNavigationBar() {
       <ul className="right-links">
         <li className="nav-bar-buttom">
           <a href="#profile" onClick={() => setShowPerfilBar(!showPerfilBar)}>
-            Perfil
+            <RiAccountCircleFill size={35}/>
           </a>
         </li>
       </ul>
