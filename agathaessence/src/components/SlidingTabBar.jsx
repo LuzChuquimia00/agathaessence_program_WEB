@@ -1,10 +1,11 @@
-// SlidingNavigationBar.jsx
 import "./NavigationBar.css";
+import "./SlidingTabBar.css";
 import { useState } from "react";
 import SideBar from "./SideBar";
 import PerfilBar from "./PerfilBar";
 import Logo from "./Logo";
 import { RiAccountCircleFill } from "react-icons/ri";
+import { RiHome2Line } from "react-icons/ri";
 
 function SlidingNavigationBar() {
   const [activeTab, setActiveTab] = useState("profile");
@@ -21,20 +22,20 @@ function SlidingNavigationBar() {
   return (
     <nav className="nav-bar">
       <ul>
-        <li className="nav-bar-buttom">
+        <li className="icons-buttom">
           <a href="#home" onClick={() => {
             setActiveTab("profile");
             setShowSideBar(!showSideBar);
           }}>
-            Home
+            <RiHome2Line size={30}/>
           </a>
         </li>
       </ul>
       <Logo />
       <ul className="right-links">
-        <li className="nav-bar-buttom">
+        <li className="icons-buttom">
           <a href="#profile" onClick={() => setShowPerfilBar(!showPerfilBar)}>
-            <RiAccountCircleFill size={35}/>
+            <RiAccountCircleFill size={30}/>
           </a>
         </li>
       </ul>

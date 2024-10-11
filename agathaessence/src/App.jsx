@@ -1,4 +1,4 @@
-import SlidingNavigationBar from "./components/SlidingTabBar";
+import SlidingNavigationBar from "./components/SlidingTabBar"
 
 function App() {
   return (

@@ -1,6 +1,17 @@
 body {
-    background-color: #2b2b2b;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+  background-image: url('./public/img/Background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; 
+  background: rgba(0, 0, 0, 0.5); 
+  pointer-events: none; 
+  z-index: 1;
+}

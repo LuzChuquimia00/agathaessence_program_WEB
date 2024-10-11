@@ -1,9 +1,9 @@
 .side-bar {
     position: absolute;
     top: 80px;
-    left: 0;
-    width: 200px;
-    height: calc(100vh - 50px);
+    left: -10px;
+    width: 199px;
+    height: calc(96.93vh - 50px);
     background-color: #f0f0f0;
     border-right: 1px solid #ccc;
   }

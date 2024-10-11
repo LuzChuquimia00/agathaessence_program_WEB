@@ -1,5 +1,8 @@
 // PerfilBar.jsx
 import "./PerfilBar.css";
+import { RiBriefcaseLine } from "react-icons/ri";
+import { FaGear } from "react-icons/fa6";
+import { BiLogOut } from "react-icons/bi";
 
 function PerfilBar() {
   return (
@@ -14,13 +17,13 @@ function PerfilBar() {
             <p>Rango de Usuario: Golden </p>
             </li>
           <li>
-            <a href="#HistorialDePedidos" className="perfil-button">Historial de pedidos</a>
+            <a href="#HistorialDePedidos" className="perfil-button">Historial de pedidos <RiBriefcaseLine size={20} style={{ position: 'relative', top: '6px', right: '1px'}} /> </a>
           </li>
           <li>
-            <a href="#ConfiguraciónDeCuenta" className="perfil-button">Configuración de cuenta</a>
+            <a href="#ConfiguraciónDeCuenta" className="perfil-button">Configuración de cuenta <FaGear size={20} style={{ position: 'relative', top: '6px', right: '1px'}} /> </a>
           </li>
           <li>
-            <a href="#CerrarSesión" className="perfil-button">Cerrar sesión</a>
+            <a href="#CerrarSesión" className="perfil-button">Cerrar sesión  <BiLogOut size={20} style={{ position: 'relative', top: '6px', right: '1px'}} /> </a>
           </li>
         </ul>
       </div>
