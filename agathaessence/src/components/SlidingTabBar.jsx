@@ -3,7 +3,8 @@ import "./SlidingTabBar.css";
 import { useState } from "react";
 import SideBar from "./SideBar";
 import PerfilBar from "./PerfilBar";
-import Logo from "./Logo";
+import Logo from "./LogoType";
+import FooterBar from "./FooterBar";
 import { RiAccountCircleFill } from "react-icons/ri";
 import { RiHome2Line } from "react-icons/ri";
 

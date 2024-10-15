@@ -1,9 +1,8 @@
 .perfil-bar {
   position: absolute;
-  top: 80px;
+  top: 75px;
   right: 0;
   width: 250px;
-  background-color: #f0f0f0;
   padding: 0;
 }
 
@@ -22,9 +21,9 @@
 .perfil-bar-container {
   top: 30px;
   right: 0;
-  background-color: #fff;
+  background-color: #1d1d1d;
   padding: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #1d1d1d;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 0;
 }
@@ -44,14 +43,14 @@
   margin-bottom: 25px;
   width: 100%;
   text-align: left;
-  color: #333;
+  color: #ffffff;
 }
 
 .perfil-bar a {
-  color: #333;
+  color: #ffffff;
   padding: 10px;
   border-radius: 5px;
-  background-color: #f0f0f0;
+  background-image: linear-gradient(to bottom, rgba(69, 94, 235, 0.5), rgba(177, 176, 255, 0.212));
   transition: background-color 0.2s ease-in-out;
 }
 

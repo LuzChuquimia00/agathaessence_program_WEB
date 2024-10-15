@@ -1,11 +1,11 @@
 .side-bar {
     position: absolute;
-    top: 80px;
+    top: 75px;
     left: -10px;
     width: 199px;
     height: calc(96.93vh - 50px);
-    background-color: #f0f0f0;
-    border-right: 1px solid #ccc;
+    background-color: #1d1d1d;
+    border-right: 1px solid #1d1d1d;
   }
   
   .home-header {
@@ -13,7 +13,7 @@
     top: 0;
     left: 0;
     width: 180px;
-    background-color: #333;
+    background-color: #3a3a3a;
     color: #fff;
     padding: 10px;
     border-radius: 0;
@@ -40,12 +40,12 @@
   }
   
   .side-bar a {
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    background-color: #f0f0f0;
+    background-image: linear-gradient(to bottom, rgba(69, 94, 235, 0.5), rgba(177, 176, 255, 0.212));
     transition: background-color 0.2s ease-in-out;
   }
   
