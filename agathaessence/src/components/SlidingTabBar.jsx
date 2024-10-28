@@ -9,39 +9,41 @@ import { RiAccountCircleFill } from "react-icons/ri";
 import { RiHome2Line } from "react-icons/ri";
 
 function SlidingNavigationBar() {
-  const [activeTab, setActiveTab] = useState("profile");
   const [showSideBar, setShowSideBar] = useState(false);
   const [showPerfilBar, setShowPerfilBar] = useState(false);
-
-  const tabs = [
-    { id: "profile", name: "Profile" },
-    { id: "contact", name: "Contact" },
-    { id: "requests", name: "Requests" },
-    { id: "new-request", name: "New Request" },
-  ];
 
   return (
     <nav className="nav-bar">
       <ul>
         <li className="icons-buttom">
-          <a href="#home" onClick={() => {
-            setActiveTab("profile");
-            setShowSideBar(!showSideBar);
-          }}>
-            <RiHome2Line size={30}/>
+          <a
+            href="#home"
+            onClick={() => {
+              setShowSideBar(!showSideBar);
+              setShowPerfilBar(false); // Cierra PerfilBar
+            }}
+          >
+            <RiHome2Line size={30} />
           </a>
         </li>
       </ul>
       <Logo />
       <ul className="right-links">
         <li className="icons-buttom">
-          <a href="#profile" onClick={() => setShowPerfilBar(!showPerfilBar)}>
-            <RiAccountCircleFill size={30}/>
+          <a
+            href="#profile"
+            onClick={() => {
+              setShowPerfilBar(!showPerfilBar);
+              setShowSideBar(false); // Cierra SideBar
+            }}
+          >
+            <RiAccountCircleFill size={30} />
           </a>
         </li>
       </ul>
       {showSideBar && <SideBar />}
       {showPerfilBar && <PerfilBar />}
+      <FooterBar />
     </nav>
   );
 }

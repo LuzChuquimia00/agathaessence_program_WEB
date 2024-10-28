@@ -1,13 +1,11 @@
-import SlidingNavigationBar from "./components/SlidingTabBar"
+import SlidingNavigationBar from "./components/SlidingTabBar";
 import FooterBar from "./components/FooterBar";
 
-function App() {
+export function App() {
   return (
     <>
       <SlidingNavigationBar />
-      <FooterBar/>
+      <FooterBar />
     </>
   );
 }
-
-export default App;
