@@ -17,9 +17,10 @@ const LoginForm = () => {
     <div className={`wrapper${action}`}>
       <div className="form-box login">
         <form action="">
-          <h1>
-            <img src={Logoimg} alt="Login" className="Login" />
-          </h1>
+          
+          <div className="login-logo">
+            <Logoimg/>
+          </div>
           <div className="input-box">
             <input type="text" placeholder="Username" required />
             <FaUser className="icon" />

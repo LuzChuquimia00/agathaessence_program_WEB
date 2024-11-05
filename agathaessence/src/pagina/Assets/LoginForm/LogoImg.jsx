@@ -3,7 +3,7 @@ import React from "react";
 function Logoimg() {
   return (
     <img
-      src="agathaessence/public/img/logo.png"
+      src="img/logo.png"
       alt="Login"
       className="Login"
     />

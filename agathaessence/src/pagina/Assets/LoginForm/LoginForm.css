@@ -45,9 +45,9 @@
     translate: 0;
 }
 
-form h1 {
-    font-size: 36px;
-    text-align: center;
+form .login-logo {
+    height: 120px;
+    margin-left: 73px;
 }
 
 form .input-box {
@@ -133,5 +133,4 @@ form .register-link{
     text-decoration: underline;
 
 }
-
 
