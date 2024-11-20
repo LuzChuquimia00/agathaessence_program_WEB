@@ -1,87 +1,66 @@
 import React, { useState } from "react";
-import "./LoginForm.css";
-import { FaUser, FaLock, FaEnvelope } from "react-icons/fa"; //icon de usuario FaUser, icon de contraseña FaLock.
-import Logoimg from "./LogoImg.jsx";
+import { createUser } from "./api";
+
 const LoginForm = () => {
   const [action, setAction] = useState("");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const registerLink = () => {
-    setAction(" active");
+  const handleRegister = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await createUser({ name: username, email, password });
+      alert(response.data.message);
+      setAction(""); // Regresar al login tras el registro exitoso
+    } catch (error) {
+      alert(error.response.data.error || "Error al registrar");
+    }
   };
 
-  const loginLink = () => {
-    setAction("");
-  };
+  const registerLink = () => setAction(" active");
+  const loginLink = () => setAction("");
 
   return (
     <div className={`wrapper${action}`}>
-      <div className="form-box login">
-        <form action="">
-          
-          <div className="login-logo">
-            <Logoimg/>
-          </div>
-          <div className="input-box">
-            <input type="text" placeholder="Username" required />
-            <FaUser className="icon" />
-          </div>
-          <div className="input-box">
-            <input type="password" placeholder="Password" required />
-            <FaLock className="icon" />
-          </div>
-
-          <div className="remember-forgot">
-            <label>
-              <input type="checkbox" /> Guardar Cuenta
-            </label>
-            <a href="#">Olvidaste la Contraseña?</a>
-          </div>
-
-          <button type="submit">Login</button>
-
-          <div className="register-link">
-            <p>
-              No tiene cuenta?{" "}
-              <a href="#" onClick={registerLink}>
-                Register
-              </a>
-            </p>
-          </div>
-        </form>
-      </div>
-
+      {/* Formulario de registro */}
       <div className="form-box register">
-        <form action="">
-          <h1>Registration</h1>
+        <form onSubmit={handleRegister}>
+          <h1>Registro</h1>
           <div className="input-box">
-            <input type="text" placeholder="Username" required />
-            <FaUser className="icon" />
+            <input
+              type="text"
+              placeholder="Username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+            />
           </div>
           <div className="input-box">
-            <input type="email" placeholder="Email" required />
-            <FaEnvelope className="icon" />
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
           </div>
           <div className="input-box">
-            <input type="password" placeholder="Password" required />
-            <FaLock className="icon" />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
           </div>
-
-          <div className="remember-forgot">
-            <label>
-              <input type="checkbox" /> I agree to the terms & conditions
-            </label>
-          </div>
-
-          <button type="submit">Register</button>
-
-          <div className="register-link">
-            <p>
-              Already have an account?{" "}
-              <a href="#" onClick={loginLink}>
-                Login
-              </a>
-            </p>
-          </div>
+          <button type="submit">Registrar</button>
+          <p>
+            Ya tienes una cuenta?{" "}
+            <a href="#" onClick={loginLink}>
+              Login
+            </a>
+          </p>
         </form>
       </div>
     </div>
